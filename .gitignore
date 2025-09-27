@@ -1,6 +1,90 @@
+# Compiled class files
 *.class
+
+# IDE and workspace files
 *.project
 *.classpath
+*.settings
+.settings/
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Build directories
+bin/
+build/
+target/
+out/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Version control
+.git/
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Maven/Ant/Gradle
+target/
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Package specific
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+
+# Generated documentation
+doc/
+docs/
+*.html
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Special directory ignores
 Algorithms/.settings/
 Algorithms/bin/
-Data_Structure/.settings/
+Data_Structures/.settings/
+Data_Structures/bin/
