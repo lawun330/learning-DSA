@@ -1,8 +1,13 @@
 /*
- * This file is an implementation of different page replacement algorithms for buffer pool management.
- * It includes FIFO (First In First Out), LRU (Least Recently Used), and LFU (Least Frequently Used).
+ * BUFFER POOL PAGE REPLACEMENT ALGORITHMS IMPLEMENTATION
  * 
- * You choose one of three algorithms and specify details to get the buffer(s).
+ * Type: Standard Java Implementation
+ * Algorithms: FIFO, LRU, and LFU page replacement strategies
+ * How it works: Simulates buffer pool management with different replacement policies
+ *               when page faults occur in limited buffer space
+ * 
+ * To run: Execute main() method - interactive menu prompts for algorithm choice,
+ *         buffer size, page count, and page sequence input
  */
 
 import java.util.*;
@@ -84,6 +89,7 @@ public class BufferPool {
                             processedPages++;  // Track total pages processed
                         }
                     } while (processedPages != totalPages);
+                    System.out.println("Total page faults: " + pageFaultCount);
                     break;
                     
                 case 2: // LRU implementation
@@ -171,6 +177,7 @@ public class BufferPool {
                             processedPages++;
                         }
                     } while (processedPages != totalPages);
+                    System.out.println("Total page faults: " + pageFaultCount);
                     break;
         
                 case 3: // LFU implementation
@@ -253,6 +260,7 @@ public class BufferPool {
                             processedPages++;
                         }
                     } while (processedPages != totalPages);
+                    System.out.println("Total page faults: " + pageFaultCount);
                     break;
                 
                 default:
@@ -264,7 +272,7 @@ public class BufferPool {
         }
     }
 
-    
+
     /* Utility method to print current state of buffer */
     private static void printBuffer(int[] buffer) {
         System.out.print("buffer: ");
